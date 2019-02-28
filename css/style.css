@@ -1,0 +1,26 @@
+
+body {
+    max-width:1024px;
+}
+
+header {
+    background-color: rgba(0,0,255,0.6);
+    color: #fff;
+    text-align: center;
+}
+
+header nav ul li {
+    background-color: #da9606;
+    display: inline-block;
+    width: 90px;
+    border-radius: 20px;
+}
+
+header nav ul li:hover{
+    background-color: #c4890a;
+}
+
+header nav ul li:active{
+    background-color: #946501;
+}
+
