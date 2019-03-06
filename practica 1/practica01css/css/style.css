@@ -1,0 +1,69 @@
+body{   
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+header{
+	background: #d1e3ee;
+}
+header nav{
+	background: #026dc6;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 2px 0px;
+	width: 99%;
+}
+header nav form{
+	float: right;
+	margin-right: 20px;
+	margin-top: -40px;
+}
+header nav form input{
+	border-radius: 5px;
+}
+header nav form input[type="button"]{
+	background: green;
+	border: 1px solid green;
+	color: white;
+}
+header nav ul li{
+	color: white;
+	display: inline-block;
+	margin-right: 20px;
+}
+#logo{
+	margin-top: -150px;
+}
+#seccion01{
+	margin-top: 15px;
+}
+#seccion01 article{
+	text-align: center;
+}
+#seccion01 article img{
+	border: 5px solid rgba(150,150,150,0.5);
+	width: 98%;
+}
+#seccion02{
+	margin-bottom: 50px;
+}
+#seccion02 article{
+	display: inline-block;
+	vertical-align: top;
+	width: 32.8%;
+}
+#seccion02 article input[type="submit"]{
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	margin-left: 130px;
+}
+.unaSeccion{
+	font-size: 4.5em;
+}
+.nito{
+	font-weight: bold;
+}
+.otraSeccion{
+	font-size: 2.5em;
+}
