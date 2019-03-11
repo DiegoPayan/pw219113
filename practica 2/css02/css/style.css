@@ -1,21 +1,20 @@
 body{
-	font-size: 16px;
+	font-size: 16px; /*1em*/
 	margin: 0px auto;
+	/*Requerimiento del cliente*/
 	min-width: 1078px;
 	max-width: 1078px;
 }
-
 header input{
 	float: right;
-	margin-right: -200px;
+	margin-right: -250px;
 	margin-top: 15px;
 	position: relative;
 }
-
 header nav{
+	/*text-align: center;*/
 	margin-left: 220px;
 }
-
 header nav ul li{
 	border-bottom: 1px solid lightgray;
 	color: lightgray;
@@ -23,13 +22,60 @@ header nav ul li{
 	font-size: 1.8em;
 	margin-right: 15px;
 	padding-bottom: 2px;
+	/*text-decoration: underline;*/
 }
-
+#bgoffer{
+	left: -35px;
+	position: relative;
+	top: -410px;
+}
 #granthams{
 	margin-left: 25px;
 	margin-top:  25px;	
 }
-
 #paint{
 	float: right;
+}
+#primerSeccion{
+	/*border: 1px solid red;*/
+	height: 318px;
+	margin-top: 60px;
+}
+#primerSeccion article{
+	/*border: 1px solid blue;*/
+	display: inline-block;
+	vertical-align: top;
+}
+#secc01art01{
+	margin-left: 30px;
+	width: 60%;
+}
+#secc01art02{
+	margin-left: 50px;
+	/*padding-left: 50px;*/
+	width: 30%;
+}
+#secc01art02 ul{
+	list-style: none;
+	margin-left: -40px;
+}
+#secc01art02 ul li:before{
+	content: "• ";
+	color: #FF0099;
+}
+#segundaSeccion article{
+	padding-right: 122px;
+	text-align: right;
+}
+.colorrosa{
+	color: #FF0099;
+}
+.letragrande{
+	font-size: 3.5em;
+}
+.letramediana{
+	font-size: 2em;
+}
+.nito{
+	font-weight: bold;
 }
