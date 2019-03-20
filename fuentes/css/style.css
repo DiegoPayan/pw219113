@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url("../Archivo_Black/ArchivoBlack-Regular.ttf");
+}
+
+#textoReferenciado {
+    font-family: 'Roboto', sans-serif    
+}
+
+#textoDescargado {
+    font-family: 'ArchivoBlack', sans-serif 
+}
