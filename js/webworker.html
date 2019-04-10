@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>WebWorker</title>
+</head>
+    <body>
+        <p>WebWorker 1:  <div id="resultado"></div></p>	
+        <button onClick="iniciarWorker();">Inicar</button>
+        <button onClick="paraWorker();">Detener</button>
+
+        <p>WebWorker 2:  <div id="resultado2"></div></p>	
+        <button onClick="iniciarWorker2()">Inicar</button>
+        <button onClick="paraWorker2()">Detener</button>
+        <script>
+            var w1 = undefined;
+            var w2 = undefined;
+            let iniciarWorker = () => {
+                if(typeof(w1) == "undefined"){
+                    w1=new Worker('demoWorker.js');
+                    w1.onmessage = (event) => {
+                        document.getElementById('resultado').innerHTML = event.data;
+                    }
+                }else{
+                    alert("El navegador no soporta WebWorkers");
+                }
+            }
+            
+            function paraWorker(){
+                w1.terminate();
+                w1 = undefined;
+            }
+
+            let iniciarWorker2 = () => {
+                if(typeof(w2) == "undefined"){
+                    w2=new Worker('demoWorker.js');
+                    w2.onmessage = (event) => {
+                        document.getElementById('resultado2').innerHTML = event.data;
+                    }
+                }else{
+                    alert("El navegador no soporta WebWorkers");
+                }
+            }
+            
+            let paraWorker2 = () => {
+                w2.terminate();
+                w2 = undefined;
+            }
+            
+        </script>
+    </body>
+</html>
